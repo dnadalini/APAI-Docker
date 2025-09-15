@@ -46,11 +46,10 @@ RUN apt-get update && \
 RUN python3 -m pip install --no-cache-dir \
         argcomplete \
         pyelftools \
-        torch \
-        torchvision \
-        torchaudio \
+        # torch torchvision torchaudio \
+        torch torchvision --index-url https://download.pytorch.org/whl/cpu \
         numpy \
-        jupyter-notebook
+        jupyterlab
 
 # Work directory
 WORKDIR /workspace
