@@ -13,6 +13,9 @@ Prerequisites:
 1. Open the current folder in a terminal (bash) and open VSCode (code .).
 2. Once the new windows opens, click on the pop-up "rebuild in container".
 3. Let VSCode install create the container for you
+4. Open a new terminal inside the containerized VSCode
+5. Run "source install.sh"
+6. Every other time you open a terminal, source "setup-pulp-sdk.sh"
 
 ## Container testing
 
