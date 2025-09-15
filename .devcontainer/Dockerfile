@@ -31,6 +31,7 @@ RUN apt-get update && \
         texinfo \
         libtool \
         libsdl2-ttf-dev \
+        wget \
     && gcc --version && g++ --version && cmake --version \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -46,8 +47,8 @@ RUN apt-get update && \
 RUN python3 -m pip install --no-cache-dir \
         argcomplete \
         pyelftools \
-        # torch torchvision torchaudio \
-        torch torchvision --index-url https://download.pytorch.org/whl/cpu \
+        torch torchvision torchaudio \
+        # torch torchvision --index-url https://download.pytorch.org/whl/cpu \
         numpy \
         jupyterlab
 
