@@ -1,7 +1,7 @@
 {
-  "name": "APAI Docker",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": "."
-  }
+  "name": "APAI Container",
+  "image": "fconti/hsdes-container",
+  "remoteUser": "root",
+  // "postCreateCommand": "python3 -m pip install --upgrade pip && pip install torch torchvision torchaudio numpy matplotlib ipython jupyterlab"
+  "postCreateCommand": "python3 -m pip install --upgrade pip && pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu numpy matplotlib"
 }
