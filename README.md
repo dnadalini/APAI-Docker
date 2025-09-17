@@ -1,4 +1,4 @@
-# APAI_Container
+# APAI-Docker
 
 This repository contains the basic configuration files to be used during the course of Architectures and Platforms for Artificial Intelligence.
 
@@ -28,5 +28,5 @@ PyTorch:
 1. Open the file present in tests/pytorch/ folder (test.ipynb) into your editor 
 2. Run the block of code. 
 3. The first time, VSCode will ask to install iPython and select the kernel. Select the gvsoc-env enviroment to run the ipython. 
-4. Enjoy your results (maybe..)!
+4. Enjoy your results!
 
