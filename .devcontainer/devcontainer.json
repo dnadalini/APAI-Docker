@@ -1,7 +1,7 @@
 {
-  "name": "APAI Docker",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": "."
-  }
+  "name": "APAI Container",
+  "image": "calindiaconu28/pulp_trainlib_minimal:jupyter_notebook",
+
+  // Forward common Jupyter ports (adjust if your image uses something else)
+  "forwardPorts": [8888, 8080]
 }
